@@ -1,6 +1,7 @@
 #pragma once
 
 #include "BaseWindow.h"
+#include "DeviceResources.h"
 
 class DX12Window : public BaseWindow
 {
@@ -13,4 +14,5 @@ public:
 	virtual void OnDestroy();
 
 private:
+	DX::DeviceResources DeviceResources;
 };
